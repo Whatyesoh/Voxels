@@ -292,7 +292,7 @@ vec4 effect(vec4 color, Image texture, vec2 uv, vec2 xy) {
                     }
                     if (data.a == 0) {
                         point = oldPoint;
-                        point += .5 * halfway * r.dir;
+                        point += .01 * halfway * r.dir;
                         //boxHit(r,hitSpot + lowerBound,halfway,point,normal);
                         break;
                         return vec4(0,1,0,1);
@@ -308,5 +308,6 @@ vec4 effect(vec4 color, Image texture, vec2 uv, vec2 xy) {
             }
         }
     }
+    //return Texel(voxelList,uv);
     return vec4(.5,.7,1,1);
 }

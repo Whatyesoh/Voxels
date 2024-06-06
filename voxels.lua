@@ -37,8 +37,8 @@ function createOctree(depth,x,y,z,newU, newV)
             distanceSquared = distanceSquared - math.pow(.5-zLim,2)
         end
 
-        --if distanceSquared > 0 then
-        if math.floor(newX * 64) % 2 == 0 then
+        if distanceSquared > 0 then
+        --if math.floor(newX * 64) % 2 == 0 then
             if depth + 1 == maxDepth then
                 love.graphics.setColor(i%2,1,1,.5)
                 love.graphics.points(newU * 4 + uModifier + .5,newV * 2 + vModifier + .5)
