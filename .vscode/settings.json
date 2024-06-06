@@ -1,0 +1,10 @@
+{
+    "cmake.configureOnOpen": false,
+    "Lua.diagnostics.globals": [
+        "love",
+        "bit32"
+    ],
+    "Lua.diagnostics.disable": [
+        "lowercase-global"
+    ]
+}
